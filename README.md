@@ -1,8 +1,8 @@
-# TaskFlow - A Responsive Task Manager App
+# TASK MANAGAR - A Responsive Task Manager App
 
-TaskFlow is a modern, responsive task management web application inspired by tools like Trello and Notion Tasks. It provides a clean, intuitive interface for users to manage their tasks efficiently across different stages of completion.
+TASK MANAGAR is a modern, responsive task management web application inspired by tools like Trello and Notion Tasks. It provides a clean, intuitive interface for users to manage their tasks efficiently across different stages of completion.
 
-## Live Demo &amp; Repository
+## Live Demo & Repository
 
 - **Live Demo:** [Link to your deployed application]
 - **GitHub Repository:** [Link to your GitHub repository]

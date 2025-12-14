@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'TaskFlow',
+  title: 'TASK MANAGAR',
   description: 'A responsive task manager app built with Next.js',
 };
 

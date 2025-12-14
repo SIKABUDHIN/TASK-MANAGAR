@@ -10,7 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Plus, Workflow } from 'lucide-react';
 import { compareAsc, compareDesc, parseISO } from 'date-fns';
 
-const LOCAL_STORAGE_KEY = 'taskflow-tasks';
+const LOCAL_STORAGE_KEY = 'task-managar-tasks';
 
 export default function Home() {
   const [tasks, setTasks] = useState<Task[]>([]);
@@ -155,7 +155,7 @@ export default function Home() {
       <header className="flex items-center justify-between p-4 border-b shrink-0 bg-card/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="flex items-center gap-3">
           <Workflow className="h-8 w-8 text-primary" />
-          <h1 className="text-2xl font-bold tracking-tight font-headline">TaskFlow</h1>
+          <h1 className="text-2xl font-bold tracking-tight font-headline">TASK MANAGAR</h1>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">
