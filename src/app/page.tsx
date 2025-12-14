@@ -7,7 +7,7 @@ import TaskColumn from '@/components/TaskColumn';
 import TaskForm from '@/components/TaskForm';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Plus, Workflow } from 'lucide-react';
+import { Plus } from 'lucide-react';
 import { compareAsc, compareDesc, parseISO } from 'date-fns';
 
 const LOCAL_STORAGE_KEY = 'task-managar-tasks';
@@ -145,7 +145,7 @@ export default function Home() {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <Workflow className="h-12 w-12 animate-spin text-primary" />
+        <div className="text-2xl font-bold">Loading...</div>
       </div>
     );
   }
@@ -154,7 +154,6 @@ export default function Home() {
     <div className="flex flex-col h-screen bg-background text-foreground font-body">
       <header className="flex items-center justify-between p-4 border-b shrink-0 bg-card/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="flex items-center gap-3">
-          <Workflow className="h-8 w-8 text-primary" />
           <h1 className="text-2xl font-bold tracking-tight font-headline">TASK MANAGAR</h1>
         </div>
         <div className="flex items-center gap-4">
