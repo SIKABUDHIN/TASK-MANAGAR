@@ -152,9 +152,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col h-screen bg-background text-foreground font-body">
-      <header className="flex items-center justify-between p-4 border-b shrink-0 bg-card/80 backdrop-blur-sm sticky top-0 z-10">
+      <header className="flex items-center justify-between p-4 border-b shrink-0 bg-background/80 backdrop-blur-sm sticky top-0 z-10">
         <div className="flex items-center gap-3">
-          <h1 className="text-2xl font-bold tracking-tight font-headline">TASK MANAGAR</h1>
+          <h1 className="text-2xl font-bold tracking-tight text-primary">TASK MANAGAR</h1>
         </div>
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-2">

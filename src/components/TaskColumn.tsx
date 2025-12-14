@@ -16,9 +16,9 @@ interface TaskColumnProps {
 }
 
 const statusColors: Record<Status, string> = {
-  'To-Do': 'bg-blue-200 border-blue-400',
-  'In-Progress': 'bg-yellow-200 border-yellow-400',
-  'Completed': 'bg-green-200 border-green-400',
+  'To-Do': 'bg-chart-3',
+  'In-Progress': 'bg-chart-2',
+  'Completed': 'bg-green-500',
 };
 
 
@@ -67,7 +67,7 @@ const TaskColumn = ({
       onDragLeave={handleDragLeave}
       onDrop={handleDrop}
       className={cn(
-        'flex flex-col rounded-lg bg-secondary/50 p-4 h-full transition-colors duration-200',
+        'flex flex-col rounded-lg bg-background border p-4 h-full transition-colors duration-200',
         isDragOver && 'bg-secondary'
       )}
     >
@@ -78,7 +78,7 @@ const TaskColumn = ({
           {tasks.length}
         </span>
       </div>
-      <div className="flex flex-col gap-4 overflow-y-auto flex-1 pb-4">
+      <div className="flex flex-col gap-4 overflow-y-auto flex-1 -mr-2 pr-2">
         {tasks.length > 0 ? (
           tasks.map((task) => (
             <TaskCard

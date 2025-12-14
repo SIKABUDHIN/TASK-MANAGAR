@@ -18,7 +18,7 @@ interface TaskCardProps {
 
 const priorityStyles: Record<Priority, string> = {
   High: 'text-chart-1',
-  Medium: 'text-chart-3',
+  Medium: 'text-chart-4',
   Low: 'text-chart-2',
 };
 
@@ -26,7 +26,7 @@ const TaskCard = ({ task, onEditClick, isDuplicate, isDragging, onDragStart, onD
   return (
     <Card
       className={cn(
-        'cursor-pointer hover:shadow-md transition-shadow duration-200 bg-card',
+        'cursor-pointer hover:shadow-lg transition-shadow duration-200 bg-card/70',
         isDragging && 'opacity-50 ring-2 ring-primary'
       )}
       onClick={() => onEditClick(task)}
