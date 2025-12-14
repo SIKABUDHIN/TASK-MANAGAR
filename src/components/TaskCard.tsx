@@ -17,16 +17,16 @@ interface TaskCardProps {
 }
 
 const priorityStyles: Record<Priority, string> = {
-  High: 'text-chart-1',
-  Medium: 'text-chart-4',
-  Low: 'text-chart-2',
+  High: 'text-red-400',
+  Medium: 'text-yellow-400',
+  Low: 'text-green-400',
 };
 
 const TaskCard = ({ task, onEditClick, isDuplicate, isDragging, onDragStart, onDragEnd }: TaskCardProps) => {
   return (
     <Card
       className={cn(
-        'cursor-pointer hover:shadow-lg transition-shadow duration-200 bg-card/70',
+        'cursor-pointer hover:shadow-lg transition-shadow duration-200 bg-secondary/50 hover:bg-secondary',
         isDragging && 'opacity-50 ring-2 ring-primary'
       )}
       onClick={() => onEditClick(task)}
@@ -36,7 +36,7 @@ const TaskCard = ({ task, onEditClick, isDuplicate, isDragging, onDragStart, onD
     >
       <CardHeader>
         <CardTitle className="text-base font-semibold">{task.title}</CardTitle>
-        {task.description && <CardDescription className="text-sm line-clamp-2">{task.description}</CardDescription>}
+        {task.description && <CardDescription className="text-sm line-clamp-2 text-muted-foreground">{task.description}</CardDescription>}
       </CardHeader>
       <CardContent className="flex items-center justify-between">
         <div className="flex items-center gap-2">
