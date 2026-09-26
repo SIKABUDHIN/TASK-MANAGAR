@@ -4,8 +4,7 @@ TASK MANAGAR is a modern, responsive task management web application inspired by
 
 ## Live Demo & Repository
 
-- **Live Demo:** [Link to your deployed application]
-- **GitHub Repository:** [Link to your GitHub repository]
+- **Live Demo:** [[Link to your deployed application](https://task-managar-one.vercel.app/)]
 
 ## Features
 
